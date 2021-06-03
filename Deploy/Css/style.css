@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: whitesmoke; */
+  z-index: 13;
+}
+#about{
+  background: linear-gradient(to top, rgb(32, 6, 32), brown);
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 500;
+    color: antiquewhite;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+h2 {
+  font-weight: 900;
+  padding: 0.5em;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul > li {
+  list-style: none;
+  margin: 0 0.7em 0 0.7em;
+}
+#day {
+  display: inline-block;
+  position: relative;
+  width: 1.8em;
+  height: 1.8em;
+}
+#day > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.3em;
+  width: 100%;
+  height: 100%;
+}
+#Bars{
+  display: none;
+}
+#daylight {
+  display: none;
+}
+li > a {
+  /* background: #fff; */
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.2em 0.5em;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+a:hover,
+#home {
+  color: #000;
+  background-color: #fff;
+}
+#parallax {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 100px;
+  overflow: hidden;
+  z-index: 5;
+}
+#parallax > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Night {
+  z-index: 12;
+}
+main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
+#night{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#night > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+#moon{
+  mix-blend-mode: screen;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@media only screen and (max-width: 600px) {
+  #hamBurger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 13rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.329);
+    z-index: 0;
+  }
+  #Bars{
+    display: inline-block;
+    z-index: 13;
+  }
+  header > ul > li {
+    display: none;
+  }
+  #hamBurger > ul > li {
+    width: 5em;
+    text-align: center;
+  }
+  #hamBurger > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+  }
+  #hamBurger > ul > li > a {
+    color: black;
+  }
+  #menu {
+    position: relative;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    transform: translate(443%, -136%);
+  }
+  #menu > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.3em;
+    width: 100%;
+    height: 100%;
+  }
+}
