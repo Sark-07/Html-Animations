@@ -1,0 +1,169 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main
+{
+    background: url('./image/brick-wall.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+header
+{
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+header > .shrink
+{
+    flex: 1;
+}
+ header .shrink  .list
+{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+header .list a
+{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+header .shrink .logo
+{
+    height: 50px;
+    width: 250px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+  
+    text-align: center;
+}
+footer
+{
+    display: flex;
+    height: 240px;
+    flex-wrap: wrap;
+}
+.box
+{
+    flex: 1 1 0;
+    padding: 10px;
+    margin: 10px 0 0 30px;
+    box-sizing: border-box;
+}
+footer > .box > h2
+{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(204, 42, 69);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+footer > .box > .border
+{
+    height: 3px;
+    background-color: rgb(190, 42, 128);
+    width: 30%;
+    border-radius: 3px;
+}
+footer > .box > p,.contact,form
+{
+    margin-top: 10px;
+}
+footer > .left > p
+{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}footer > .left > .social-media
+{
+    text-align: start;
+}
+footer > .left > .social-media > a
+{
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: gray;
+    opacity: 0.8;
+    color: black;
+    margin: 0 8px;
+}
+footer > .mid > .contact > ul >li
+{
+    list-style: none;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+footer  .right  form  textarea ,input, button
+{
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+footer .right form .text
+{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+footer .right form input[type="email"], button[type="submit"]
+{
+    height: 25px;
+}
+footer .right form  button[type="submit"]
+{
+    margin-top: 4px;
+}
+@media screen and (max-width: 700px)
+{
+    footer > .left > .social-media > a
+    {
+        padding: 2px;
+        margin: 0 4px;
+    }
+    .social-media
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 553px)
+{
+    footer > .left > .social-media > a
+    {
+        margin-top: 5px;
+    }
+}

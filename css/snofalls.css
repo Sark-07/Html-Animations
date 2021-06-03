@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+i{
+    position: absolute;
+    top: 0;
+    background-color: honeydew;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px  #00B4D8,
+                0px 0px 20px  #00B4D8,
+                0px 0px 30px  #00B4D8,
+                0px 0px 40px  #00B4D8;
+    animation: animate linear infinite,
+               colors 5s linear infinite; 
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0vh);
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translateY(100vh);
+        filter: hue-rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes colors{
+    0%{
+
+    }
+}
