@@ -7,48 +7,44 @@
     <!-- <link rel="stylesheet" href="./css/snofalls.css" /> -->
   </head>
   <style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-section{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000000;
-    position: relative;
-}
-i{
-    position: absolute;
-    top: 0;
-    background-color: honeydew;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px  #00B4D8,
-                0px 0px 20px  #00B4D8,
-                0px 0px 30px  #00B4D8,
-                0px 0px 40px  #00B4D8;
-    animation: animate linear infinite,
-               colors 5s linear infinite; 
-}
-@keyframes animate{
-    0%{
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #000000;
+      position: relative;
+    }
+    i {
+      position: absolute;
+      top: 0;
+      background-color: honeydew;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px #00b4d8, 0px 0px 20px #00b4d8,
+        0px 0px 30px #00b4d8, 0px 0px 40px #00b4d8;
+      animation: animate linear infinite, colors 5s linear infinite;
+    }
+    @keyframes animate {
+      0% {
         transform: translateY(0vh);
         filter: hue-rotate(0deg);
-    }
-    50%{
+      }
+      50% {
         filter: hue-rotate(180);
-    }
-    100%{
+      }
+      100% {
         transform: translateY(100vh);
         filter: hue-rotate(360deg);
         opacity: 0;
+      }
     }
-}
-@keyframes colors{
-    0%{
-
+    @keyframes colors {
+      0% {
+      }
     }
-}
   </style>
   <body>
     <section></section>
@@ -60,7 +56,7 @@ i{
       let snow = document.createElement("i");
       let x = Math.floor(Math.random() * innerWidth);
       let size = Math.floor(Math.random() * 10);
-      let duration = (Math.random() * 10 )+ 5;
+      let duration = Math.random() * 10 + 5;
       // console.log(duration);
       let delay = Math.random() * 5;
       snow.style.width = size + "px";
